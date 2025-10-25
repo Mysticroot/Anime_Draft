@@ -1,0 +1,71 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build / output
+dist/
+build/
+.client-dist/
+.client-build/
+server/build/
+
+# Vite / dev caches
+.vite/
+.cache/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files (keep local secrets out of git)
+.env
+.env.*.local
+server/.env
+client/.env
+client/.env.* 
+# If you use .env.example for docs, do NOT ignore it.
+
+# Runtime / process files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+coverage-final.json
+.nyc_output/
+
+# Test / temp
+*.test.js.snap
+/__tests__/
+tmp/
+temp/
+
+# OS generated files for Windows
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Misc
+package-lock.json
+*.tgz
+
+# Optional - built frontend artifacts if you commit them elsewhere
+client/dist/
+client/build/
+server/.env
