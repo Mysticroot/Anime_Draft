@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 const API_BASE = import.meta.env.VITE_API_URL;
 
 async function fetchCharacters() {
-  const res = await fetch(`${API_BASE}/match/cards`);
+  const res = await fetch(`${API_BASE}/characters`);
   if (!res.ok) throw new Error("Failed to fetch characters");
   const data = await res.json();
-  return data.cards;
+  return data.data;
 }
 
 export default function AllCharacters() {
